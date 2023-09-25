@@ -1,7 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron Mosenzon - Personal Homepage</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a background color and text color */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Style the main content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Style the publication link */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Add a hover effect to the publication link */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style the email address */
+        .email {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Create a two-column layout */
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        /* Style the image */
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <h1>Ron Mosenzon</h1>
+    </header>
+    <div class="container">
+        <div class="two-columns">
+            <div class="column">
+                <section>
+                    <h2>About Me</h2>
+                    <p>I'm a second-year Ph.D. student at the Toyota Technological Institute at Chicago.</p>
+                    <p>Advisor: Prof. Julia Chuzhoy</p>
+                    <p>Research Area: Approximation Algorithms</p>
+                    <p>I got my Bachelor's degree at the Open University of Israel, and my Master's degree at the Weizmann Institute of Science, where I was advised by Prof. Robert Krauthgamer.</p>
+                </section>
+                <section>
+                    <h2>Publications</h2>
+                    <p><a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611977554.ch91">Exact Flow Sparsification Requires Unbounded Size</a> - Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)</p>
+                    <p>Authors: Robert Krauthgamer, Ron Mosenzon</p>
+                </section>
+		<section class="teaching">
+                    <h2>Teaching</h2>
+                    <p>TA for "Approximation Algorithms" in Autumn Quarter 2023</p>
+                    <p>Instructor: Prof. Julia Chuzhoy, TTIC</p>
+                </section>
+                <!-- Add more sections or content as needed -->
+                <div class="email">
+                    Contact me at: <a href="mailto:ron.mosenzon@ttic.edu">ron.mosenzon@ttic.edu</a>
+                </div>
+            </div>
+            <div class="column">
+                <!-- Add your image here with the updated source path -->
+                <img class="profile-image" src="./resource/homepage_photo.jpeg" alt="Ron Mosenzon">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
